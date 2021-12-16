@@ -6,19 +6,25 @@ import Links from './components/Links';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Education from './components/Education';
+import cv from './mocks/response';
 
-if (process.env.NODE_ENV === 'development') {
-  require('./mocks/browser');
+// commented out msw for build demo purposes
+// if (process.env.NODE_ENV === 'development') { 
+// require('./mocks/browser');
+// }
+
+// const fetchCV = () => axios.get('http://localhost:8080/api/cv')
+//   .then(({ data }) => {
+//     return data;
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//     throw Error('Error fetching CV: ', err);
+//   })
+
+const fetchCV = async () => {
+  return await cv
 }
-
-const fetchCV = () => axios.get('http://localhost:8080/api/cv')
-  .then(({ data }) => {
-    return data;
-  })
-  .catch((err) => {
-    console.log(err);
-    throw Error('Error fetching CV: ', err);
-  })
 
 export const ThemeContext = createContext();
 
@@ -37,6 +43,7 @@ const App = () => {
   useEffect(() => {
     fetchCV()
       .then(cv => {
+        console.log(cv)
         setCV(cv);
         setStatus('success');
       })

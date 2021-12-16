@@ -63,7 +63,7 @@ const cv = {
             id: 2,
             type: 'link',
             display: 'robin mikaelsen-cunningham',
-            link: 'http://localhost:3000/'
+            link: 'https://robinjmc.github.io/robinmikaelsencunningham/'
         },
     ],
     skills: [
