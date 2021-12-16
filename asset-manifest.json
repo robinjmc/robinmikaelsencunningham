@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/robinjmc/robinmikaelsencunningham/static/css/main.359976cb.css",
+    "main.js": "/robinjmc/robinmikaelsencunningham/static/js/main.65928131.js",
+    "static/js/787.afac32c3.chunk.js": "/robinjmc/robinmikaelsencunningham/static/js/787.afac32c3.chunk.js",
+    "index.html": "/robinjmc/robinmikaelsencunningham/index.html",
+    "main.359976cb.css.map": "/robinjmc/robinmikaelsencunningham/static/css/main.359976cb.css.map",
+    "main.65928131.js.map": "/robinjmc/robinmikaelsencunningham/static/js/main.65928131.js.map",
+    "787.afac32c3.chunk.js.map": "/robinjmc/robinmikaelsencunningham/static/js/787.afac32c3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.359976cb.css",
+    "static/js/main.65928131.js"
+  ]
+}
